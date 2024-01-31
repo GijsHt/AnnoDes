@@ -9,7 +9,7 @@ The detection and mitigation of hate speech and toxicity online is vital for ens
 
 A handful of social media platforms have their own hate-speech/toxicity detection model, others buy software that does that for them. And as they grapple with the growth of hate speech and offensive content, the accuracy and the performance of the models are constant subjects of improvement. Some platforms choose to ignore texts with high annotator disagreement, thinking this will merely confuse the model or lead to unwanted results. Nevertheless, the impact of annotator disagreements on model performance remains an underexplored area. With this research, the gap will be addressed by observing how different the models will behave. For each dataset, two models will be made. The first model will be fed data -text data that contains toxic and hateful comments- with annotators' disagreement. Another model will be made and fed the same data, but this time without any annotator disagreement, so no multiple labels for the same comment. The results will be thoroughly looked at and compared to determine if the annotators' disagreement has indeed an effect on the performance of the model and if that effect is positive or negative. Eventually, this research will give valuable insights into how to improve hate speech detection algorithms.
 
- 
+
 **Literature**:
 
 The choice of datasets is a crucial aspect of hate speech detection research. However, finding a dataset with the desired metrics is challenging. Therefore, I have chosen the following two datasets:

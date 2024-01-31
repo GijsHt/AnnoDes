@@ -2,13 +2,16 @@
 This research aims to study the effect of annotator disagreements on AI models' performance
 
 **Introduction**:
+
 The detection and mitigation of hate speech and toxicity online is vital for ensuring a safe and inclusive online environment. However, since the online presence is too multicultural, subjectivity arises in annotating toxic and hateful content. Which poses challenges and hardships in developing a dependable hate speech detection model. Another challenge is context, toxicity is very context-dependent. In some cases, it is even time-dependent, as previously normally thought words can become slurs or toxic over time. This research proposal addresses the need to explore the impact of the annotator disagreement on the performance of hate speech detection models. By training a model on a dataset with annotators' disagreement or simulated annotators' disagreement, the study aims to enhance our understanding of the effect of subjective labeling on detection models and unearth the complexities associated herewith.
 
 **Background**:
+
 A handful of social media platforms have their own hate-speech/toxicity detection model, others buy software that does that for them. And as they grapple with the growth of hate speech and offensive content, the accuracy and the performance of the models are constant subjects of improvement. Some platforms choose to ignore texts with high annotator disagreement, thinking this will merely confuse the model or lead to unwanted results. Nevertheless, the impact of annotator disagreements on model performance remains an underexplored area. With this research, the gap will be addressed by observing how different the models will behave. For each dataset, two models will be made. The first model will be fed data -text data that contains toxic and hateful comments- with annotators' disagreement. Another model will be made and fed the same data, but this time without any annotator disagreement, so no multiple labels for the same comment. The results will be thoroughly looked at and compared to determine if the annotators' disagreement has indeed an effect on the performance of the model and if that effect is positive or negative. Eventually, this research will give valuable insights into how to improve hate speech detection algorithms.
 
  
 **Literature**:
+
 The choice of datasets is a crucial aspect of hate speech detection research. However, finding a dataset with the desired metrics is challenging. Therefore, I have chosen the following two datasets:
 1.	The Wikipedia Talk Labels Toxicity Dataset
 2.	Stormfront Hate Speech Dataset
@@ -16,6 +19,7 @@ The first dataset focuses on the toxicity in annotations in the Wikipedia discus
 The Wikipedia dataset contains a table about the background of the annotators (age, academic background, gender, and whether English is their first language). However, this information does interest us since we are only interested in the effect of the disagreements on the models, so the demographics table will be not used, and any columns related to demographics will be deleted in other tables. Luckily, the Wikipedia dataset has multiple labels for the same comment, meaning we already have the annotators' disagreement. To train the model without the annotators' disagreement on this dataset, each comment will have one label the other labels will be deleted. To determine which label each comment is going to get, the number of votes on whether a certain comment is toxic or not will be looked at. If more votes say toxic, then it is considered toxic. For example, if a comment has three people who give it a toxic label and only two people who give it a not toxic score, it will be labeled toxic for this study. If the number of votes is equal, then the comment will be labeled as toxic. While this approach involves a majority voting system for labeling, it is important to acknowledge that this could lead to potential biases. 
 
 **Supposition and implications**: 
+
 The fruits of this study and the methodologies developed can also serve as a framework for future research about improving the accuracy and performance of toxicity detection models, though this is not the aim of this research as previously discussed. By highlighting the beneficial side or the potential pitfalls associated with training models on data with annotators' disagreement, this study can be adopted by research exploring associated topics. Moreover, it offers a practical benefit, namely for online platforms aiming to create better and more robust detection models.
 
 **Conclusion**:

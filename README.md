@@ -25,3 +25,4 @@ The fruits of this study and the methodologies developed can also serve as a fra
 
 **Conclusion**:
 To conclude, this research proposal aims to address the impact of annotator disagreements on hate speech detection models. The methodology involves the comparison between two models, one trained on data with annotator disagreement, and the other model trained on the data without any preexisting or simulated disagreement. The chosen datasets provide a good foundation to start the research. However, it is quite important to recognize potential biases associated with the datasets, biases that could affect the generalizability and overall performance of the model. To mitigate that, the samples will be balanced, and adversarial training to make the model less prone to biases or overfitting patterns might be used. 
+![img.png](img.png)
